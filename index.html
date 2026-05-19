@@ -2,206 +2,745 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="google-site-verification" content="g_MeGFswOROwoIjwIPuSvfD8VLPe5VlBce4fJOPYSTs" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AHASS Zaky Motor Pekanbaru</title>
+
+  <title>AHASS Zaky Motor Pekanbaru | Servis Resmi Honda</title>
+
+  <meta name="description" content="AHASS Zaky Motor Pekanbaru melayani servis resmi Honda, ganti oli, servis CVT, sparepart asli Honda dengan teknisi profesional.">
+
+  <meta name="keywords" content="AHASS Pekanbaru, servis Honda Pekanbaru, bengkel Honda Pekanbaru, ganti oli Honda">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.6; }
-    :root { --primary: #e10600; --dark: #111111; --gray: #6b7280; --light: #f5f5f5; --white: #ffffff; }
-    .container { width: 90%; max-width: 1200px; margin: auto; }
-    header { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 999; border-bottom: 1px solid #eee; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
-    .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
-    .nav-links { display: flex; gap: 24px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }
-    .nav-links a:hover { color: var(--primary); }
-    .btn { display: inline-block; padding: 14px 28px; background: var(--primary); color: var(--white); border-radius: 12px; text-decoration: none; font-weight: 600; transition: 0.3s ease; }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(225,6,0,0.25); }
-    .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 100px; background: linear-gradient(135deg, #fff 0%, #ffeaea 100%); }
-    .hero-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: center; gap: 50px; }
-    .hero-text h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800; }
-    .hero-text h1 span { color: var(--primary); }
-    .hero-text p { color: var(--gray); margin-bottom: 30px; font-size: 1.1rem; }
-    .hero-image img { width: 100%; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
-    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 40px; }
-    .stat-box { background: white; padding: 24px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
-    .stat-box h3 { color: var(--primary); font-size: 2rem; }
-    section { padding: 100px 0; }
-    .section-title { text-align: center; margin-bottom: 60px; }
-    .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; }
-    .services { background: var(--light); }
-    .map-container { margin-top: 30px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-    .mobile-menu { display: none; font-size: 2rem; cursor: pointer; }
-    @media (max-width: 768px) {
-      .nav-links { position: absolute; top: 80px; right: -100%; flex-direction: column; background: white; width: 250px; padding: 30px; transition: 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-      .nav-links.active { right: 20px; }
-      .mobile-menu { display: block; }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
+
+    :root{
+      --primary:#e10600;
+      --dark:#111111;
+      --gray:#6b7280;
+      --light:#f5f5f5;
+      --white:#ffffff;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#ffffff;
+      color:#111;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:999;
+      background:rgba(255,255,255,0.92);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(0,0,0,0.05);
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 0;
+    }
+
+    .logo{
+      font-size:1.5rem;
+      font-weight:900;
+      color:var(--primary);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111;
+      font-weight:600;
+      transition:0.3s ease;
+    }
+
+    .nav-links a:hover{
+      color:var(--primary);
+    }
+
+    .nav-btn{
+      background:var(--primary);
+      color:white;
+      padding:12px 22px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s ease;
+    }
+
+    .nav-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 25px rgba(225,6,0,0.3);
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      /* Background baru dengan gambar suasana mekanik di bengkel resmi */
+      background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('https://selamatmotor.com/wp-content/uploads/2024/04/banner-1920x800-ahass.webp);
+      background-size:cover;
+      background-position:center;
+      color:white;
+      position:relative;
+    }
+
+    .hero-content{
+      max-width:700px;
+      padding-top:100px;
+    }
+
+    .hero-badge{
+      display:inline-block;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.2);
+      backdrop-filter:blur(10px);
+      padding:10px 18px;
+      border-radius:999px;
+      margin-bottom:25px;
+      font-weight:600;
+    }
+
+    .hero h1{
+      font-size:4.2rem;
+      line-height:1.05;
+      margin-bottom:25px;
+      font-weight:900;
+    }
+
+    .hero h1 span{
+      color:#ff3b30;
+    }
+
+    .hero p{
+      font-size:1.15rem;
+      line-height:1.8;
+      color:#f1f1f1;
+      margin-bottom:35px;
+      max-width:650px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .btn-primary{
+      background:var(--primary);
+      color:white;
+      padding:16px 32px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s ease;
+      display:inline-block;
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#111;
+      padding:16px 32px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s ease;
+      display:inline-block;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      margin-top:-70px;
+      position:relative;
+      z-index:5;
+    }
+
+    .stat-card{
+      background:white;
+      border-radius:24px;
+      padding:35px;
+      text-align:center;
+      box-shadow:0 20px 50px rgba(0,0,0,0.08);
+      transition:0.3s ease;
+    }
+
+    .stat-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .stat-card h2{
+      font-size:2.5rem;
+      color:var(--primary);
+      margin-bottom:8px;
+    }
+
+    section{
+      padding:110px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title span{
+      color:var(--primary);
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    .section-title h2{
+      font-size:3rem;
+      margin-top:12px;
+      margin-bottom:18px;
+    }
+
+    .section-title p{
+      color:var(--gray);
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .service-card{
+      background:white;
+      border-radius:24px;
+      padding:40px 30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      transition:0.3s ease;
+      border-top:5px solid var(--primary);
+    }
+
+    .service-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .service-icon{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .service-card h3{
+      margin-bottom:15px;
+      font-size:1.4rem;
+    }
+
+    .service-card p{
+      color:var(--gray);
+      line-height:1.8;
+    }
+
+    .why{
+      background:#fafafa;
+    }
+
+    .why-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .why-card{
+      background:white;
+      padding:40px 35px;
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+      transition:0.3s ease;
+    }
+
+    .why-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .why-card h3{
+      margin:20px 0 12px;
+    }
+
+    .why-card p{
+      color:var(--gray);
+      line-height:1.8;
+    }
+
+    .testimonial-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    .testimonial-card{
+      background:white;
+      border-radius:24px;
+      padding:35px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      border:1px solid #eee;
+    }
+
+    .testimonial-card p{
+      color:var(--gray);
+      line-height:1.9;
+      font-style:italic;
+      margin-bottom:25px;
+    }
+
+    .testimonial-card h4{
+      color:var(--primary);
+    }
+
+    .cta-section{
+      background:linear-gradient(135deg,#e10600,#ff3b30);
+      color:white;
+      border-radius:40px;
+      padding:80px 50px;
+      text-align:center;
+    }
+
+    .cta-section h2{
+      font-size:3rem;
+      margin-bottom:18px;
+    }
+
+    .cta-section p{
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+      margin-bottom:35px;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      margin-bottom:35px;
+      text-align:left;
+    }
+
+    .contact-box{
+      background:rgba(255,255,255,0.12);
+      padding:25px;
+      border-radius:20px;
+      backdrop-filter:blur(8px);
+    }
+
+    .contact-box h4{
+      margin-bottom:12px;
+    }
+
+    iframe{
+      border:none;
+      border-radius:24px;
+      width:100%;
+      height:420px;
+      margin-top:30px;
+    }
+
+    footer{
+      background:#0f0f0f;
+      color:white;
+      text-align:center;
+      padding:50px 0;
+      margin-top:100px;
+    }
+
+    footer p{
+      opacity:0.7;
+      margin-top:10px;
+    }
+
+    .floating-wa{
+      position:fixed;
+      width:65px;
+      height:65px;
+      right:25px;
+      bottom:25px;
+      background:#25D366;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-size:32px;
+      color:white;
+      z-index:9999;
+      box-shadow:0 15px 30px rgba(0,0,0,0.2);
+      transition:0.3s ease;
+    }
+
+    .floating-wa:hover{
+      transform:scale(1.1);
+    }
+
+    .mobile-menu{
+      display:none;
+      font-size:2rem;
+      cursor:pointer;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .section-title h2{
+        font-size:2.2rem;
+      }
+
+      .cta-section h2{
+        font-size:2rem;
+      }
+
+      .nav-links{
+        position:absolute;
+        top:80px;
+        right:-100%;
+        flex-direction:column;
+        background:white;
+        width:260px;
+        padding:30px;
+        border-radius:20px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        transition:0.3s ease;
+      }
+
+      .nav-links.active{
+        right:20px;
+      }
+
+      .mobile-menu{
+        display:block;
+      }
+
+      .nav-btn{
+        display:none;
+      }
+
+      .hero-buttons{
+        flex-direction:column;
+      }
+
+    }
+
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">AHASS Zaky Motor Pekanbaru</div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Layanan</a></li>
-          <li><a href="#why">Keunggulan</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-        <div class="mobile-menu" id="menuBtn">☰</div>
-      </nav>
+<header>
+  <div class="container">
+    <nav>
+
+      <div class="logo">AHASS Zaky Motor</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#why">Keunggulan</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+
+      <a href="https://wa.me/6282288287070" class="nav-btn">Booking Sekarang</a>
+
+      <div class="mobile-menu" id="menuBtn">☰</div>
+
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        ⭐ Bengkel Resmi Honda Pekanbaru
+      </div>
+
+      <h1>
+        Servis Motor Honda <span>Cepat, Resmi & Bergaransi</span>
+      </h1>
+
+      <p>
+        AHASS Zaky Motor Pekanbaru menghadirkan layanan servis resmi Honda dengan teknisi profesional, sparepart asli Honda, dan fasilitas premium untuk kenyamanan Anda.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/6282288287070" class="btn-primary">
+          Booking via WhatsApp
+        </a>
+
+        <a href="#services" class="btn-secondary">
+          Lihat Layanan
+        </a>
+      </div>
+
     </div>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Bengkel Resmi Honda <span> Andalan Motoris Pekanbaru</span></h1>
-        <p>AHASS Zaky Motor Pekanbaru siap memberikan pelayanan terbaik untuk motor Honda Anda. Teknisi profesional, sparepart asli Honda, dan servis berkualitas di Pekanbaru.</p>
-        <a href="#contact" class="btn">Booking Servis</a>
-        <div class="stats">
-          <div class="stat-box"><h3>10+</h3><p>Tahun Pengalaman</p></div>
-          <div class="stat-box"><h3>5000+</h3><p>Pelanggan Puas</p></div>
-          <div class="stat-box"><h3>100%</h3><p>Sparepart Asli</p></div>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true/uploads/article/thumbnail/servis-sepeda-motor-honda-tanpa-ketar-ketir-ke-ahass-saja-10122021-041537.jpg" alt="Motor Honda">
-      </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <div class="stats">
+
+    <div class="stat-card">
+      <h2>10+</h2>
+      <p>Tahun Pengalaman</p>
     </div>
-  </section>
 
-  <section id="why" style="background: white; padding: 100px 0;">
-    <div class="container">
-      <div class="section-title">
-        <h2>Keunggulan Kami</h2>
-        <p>Alasan mengapa motor Honda Anda harus servis di tempat kami.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-        <div style="background: var(--light); padding: 40px 30px; border-radius: 20px; text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 20px;">👨‍🔧</div>
-          <h3 style="margin-bottom: 15px;">Mekanik Ahli</h3>
-          <p style="color: var(--gray);">Teknisi tersertifikasi resmi AHM yang menjamin kualitas pengerjaan presisi.</p>
-        </div>
-        <div style="background: var(--light); padding: 40px 30px; border-radius: 20px; text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 20px;">🛡️</div>
-          <h3 style="margin-bottom: 15px;">Sparepart Asli</h3>
-          <p style="color: var(--gray);">Kami hanya menyediakan Honda Genuine Parts untuk keamanan berkendara Anda.</p>
-        </div>
-        <div style="background: var(--light); padding: 40px 30px; border-radius: 20px; text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 20px;">☕</div>
-          <h3 style="margin-bottom: 15px;">Fasilitas Nyaman</h3>
-          <p style="color: var(--gray);">Ruang tunggu bersih dilengkapi WiFi dan minuman gratis selama Anda menunggu.</p>
-        </div>
-      </div>
+    <div class="stat-card">
+      <h2>5000+</h2>
+      <p>Pelanggan Puas</p>
     </div>
-  </section>
 
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Layanan Kami</h2>
-        <p>Pelayanan lengkap untuk menjaga performa motor Honda Anda.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 20px;">
-        <div style="background: white; border-top: 5px solid var(--primary); border-radius: 12px; padding: 30px; text-align: center; border: 1px solid #eee;">
-          <h3>Pit Express</h3>
-          <p style="color: var(--gray);">Ganti oli di sini di bawah 10 menit tanpa antre.</p>
-        </div>
-        <div style="background: white; border-top: 5px solid var(--primary); border-radius: 12px; padding: 30px; text-align: center; border: 1px solid #eee;">
-          <h3>Servis Lengkap</h3>
-          <p style="color: var(--gray);">Pembersihan dan pengecekan total standar Honda.</p>
-        </div>
-      </div>
-      <div style="background: white; border-top: 5px solid var(--primary); border-radius: 12px; padding: 30px; text-align: center; margin-bottom: 60px; border: 1px solid #eee;">
-        <h3>Fasilitas Premium</h3>
-        <p style="color: var(--gray);">Ruang Tunggu Nyaman, WiFi, & Air Mineral Gratis.</p>
-      </div>
-
-      <div class="section-title"><h2>Estimasi Paket Servis</h2></div>
-      <div style="overflow-x: auto; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-          <thead>
-            <tr style="background-color: var(--primary); color: white;">
-              <th style="padding: 15px;">Paket</th>
-              <th style="padding: 15px;">Harga</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td style="padding: 15px; border-bottom: 1px solid #eee;">Servis Reguler</td><td style="padding: 15px; border-bottom: 1px solid #eee;">Mulai Rp 75.000</td></tr>
-            <tr style="background-color: #f9f9f9;"><td style="padding: 15px; border-bottom: 1px solid #eee;">Ganti Oli + Gratis Jasa Pasang</td><td style="padding: 15px; border-bottom: 1px solid #eee;">Mulai Rp 58.000</td></tr>
-            <tr><td style="padding: 15px;">Servis CVT</td><td style="padding: 15px;">Mulai Rp 45.000</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="stat-card">
+      <h2>100%</h2>
+      <p>Sparepart Asli Honda</p>
     </div>
-  </section>
 
-  <section id="testimoni" style="background: white; padding: 100px 0;">
-    <div class="container">
-      <div class="section-title">
-        <h2>Apa Kata Pelanggan?</h2>
-        <p>Kepuasan Anda adalah prioritas utama kami di AHASS Zaky Motor.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-        <div style="background: #fff; padding: 30px; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-          <p style="font-style: italic; color: var(--gray);">"Servisnya cepat, mekaniknya ramah dan sangat menjelaskan kondisi motor. Pit Express sangat membantu kalau cuma mau ganti oli."</p>
-          <h4 style="margin-top: 20px; color: var(--primary);">— Budi S.</h4>
-        </div>
-        <div style="background: #fff; padding: 30px; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-          <p style="font-style: italic; color: var(--gray);">"Suku cadang lengkap dan dijamin asli. Ruang tunggunya juga nyaman sekali, ada WiFi gratis jadi tidak bosan menunggu."</p>
-          <h4 style="margin-top: 20px; color: var(--primary);">— Siti Aminah</h4>
-        </div>
-      </div>
+  </div>
+
+</div>
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>LAYANAN KAMI</span>
+      <h2>Servis Berkualitas Standar Honda</h2>
+      <p>
+        Kami menghadirkan layanan lengkap untuk menjaga performa motor Honda Anda tetap optimal setiap hari.
+      </p>
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="cta" style="text-align: center; background: linear-gradient(135deg, #e10600, #ff3b30); color: white; border-radius: 30px; padding: 70px 40px;">
-        <h2>Hubungi AHASS Zaky Motor Pekanbaru</h2>
-        <p style="margin-bottom: 25px;">Siap memberikan pelayanan terbaik untuk motor Honda Anda.</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; text-align: left;">
-          <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
-            <p style="font-weight: 700; margin-bottom: 8px;">📍 Lokasi Kami:</p>
-            <p style="font-size: 0.95rem; opacity: 0.9;">Jl. Teropong, Kubang Jaya, Kec. Siak Hulu, Kota Pekanbaru, Riau 28293</p>
-          </div>
-          <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;">
-            <p style="font-weight: 700; margin-bottom: 8px;">⏰ Jam Operasional:</p>
-            <ul style="list-style: none; font-size: 0.95rem; opacity: 0.9;">
-              <li>Senin - Sabtu: 08.00 - 17.00 WIB</li>
-              <li>Minggu: 08.00 - 14.00 WIB</li>
-            </ul>
-          </div>
-        </div>
-        <a href="https://wa.me/6282288287070" class="btn" style="background: white; color: var(--primary); margin-bottom: 40px;">Booking Lewat WhatsApp</a>
-        <div class="map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.704205561148!2d101.4011409749646!3d0.4323214995634568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a7bc67fee333%3A0x9875cfc32bcbff70!2sAHASS%20Zaky%20Motor%20Pekanbaru!5e0!3m2!1sid!2sid!4v1716088285511!5m2!1sid!2sid" 
-            width="100%" height="400" style="border:0; border-radius: 15px;" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🛵</div>
+        <h3>Pit Express</h3>
+        <p>
+          Ganti oli cepat tanpa antre dengan proses profesional dan efisien.
+        </p>
       </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Servis Lengkap</h3>
+        <p>
+          Pemeriksaan menyeluruh untuk memastikan motor tetap nyaman dan aman digunakan.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <h3>Servis CVT</h3>
+        <p>
+          Membersihkan dan merawat CVT motor matic agar tarikan tetap halus.
+        </p>
+      </div>
+
     </div>
-  </section>
 
-  <footer style="background: #0f0f0f; color: white; padding: 40px 0; text-align: center;">
-    <p>© 2026 AHASS Zaky Motor. All Rights Reserved.</p>
-  </footer>
+  </div>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-    menuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
-  </script>
+</section>
+
+<section class="why" id="why">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>KENAPA MEMILIH KAMI</span>
+      <h2>Standar Dealer Resmi Honda</h2>
+      <p>
+        AHASS Zaky Motor memberikan pelayanan terbaik dengan kualitas resmi Honda.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div style="font-size:3rem;">👨‍🔧</div>
+        <h3>Teknisi Profesional</h3>
+        <p>
+          Mekanik tersertifikasi AHM dengan standar pengerjaan presisi.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div style="font-size:3rem;">🛡️</div>
+        <h3>Sparepart Asli Honda</h3>
+        <p>
+          Menggunakan Honda Genuine Parts demi keamanan dan kualitas terbaik.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <div style="font-size:3rem;">☕</div>
+        <h3>Ruang Tunggu Premium</h3>
+        <p>
+          Nikmati ruang tunggu nyaman dengan WiFi dan minuman gratis.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="testimoni">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>TESTIMONI</span>
+      <h2>Apa Kata Pelanggan?</h2>
+      <p>
+        Kepuasan pelanggan adalah prioritas utama kami di AHASS Zaky Motor.
+      </p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <p>
+          “Servisnya cepat dan mekaniknya ramah. Penjelasannya detail dan motor terasa lebih enak setelah servis.”
+        </p>
+
+        <h4>— Budi Saputra</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <p>
+          “Sparepart lengkap, ruang tunggu nyaman, dan proses servis sangat profesional seperti dealer besar.”
+        </p>
+
+        <h4>— Siti Aminah</h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="cta-section">
+
+      <h2>Booking Servis Sekarang</h2>
+
+      <p>
+        Hubungi AHASS Zaky Motor Pekanbaru dan nikmati pelayanan servis resmi Honda terbaik.
+      </p>
+
+      <div class="contact-grid">
+
+        <div class="contact-box">
+          <h4>📍 Lokasi</h4>
+          <p>
+            Jl. Teropong, Kubang Jaya, Kec. Siak Hulu, Pekanbaru, Riau 28293
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h4>⏰ Jam Operasional</h4>
+          <p>
+            Senin - Sabtu : 08.00 - 17.00 WIB<br>
+            Minggu : 08.00 - 14.00 WIB
+          </p>
+        </div>
+
+      </div>
+
+      <a href="https://wa.me/6282288287070" class="btn-secondary">
+        Chat WhatsApp Sekarang
+      </a>
+
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.704205561148!2d101.4011409749646!3d0.4323214995634568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a7bc67fee333%3A0x9875cfc32bcbff70!2sAHASS%20Zaky%20Motor%20Pekanbaru!5e0!3m2!1sid!2sid!4v1716088285511!5m2!1sid!2sid"
+      loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h3>AHASS Zaky Motor Pekanbaru</h3>
+
+  <p>
+    Servis Resmi Honda • Teknisi Profesional • Sparepart Asli Honda
+  </p>
+
+  <p>
+    © 2026 All Rights Reserved
+  </p>
+
+</footer>
+
+<a href="https://wa.me/6282288287070" class="floating-wa">
+  💬
+</a>
+
+<script>
+
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  menuBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle('active');
+  });
+
+</script>
+
 </body>
 </html>
