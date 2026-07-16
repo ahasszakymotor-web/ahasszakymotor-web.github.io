@@ -109,6 +109,18 @@
     .testi-card p { font-style: italic; color: #4b5563; font-size: 1rem; position: relative; z-index: 1; }
     .testi-card h4 { margin-top: 20px; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
     
+    /* F.A.Q Accordion Styles */
+    .faq-section { background: var(--light); border-top: 1px solid #eee; }
+    .faq-wrapper { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+    .faq-item { background: white; border-radius: 14px; border: 1px solid #eee; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.01); }
+    .faq-question { padding: 20px 25px; font-weight: 600; font-size: 1.05rem; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: 0.3s; }
+    .faq-question:hover { background: #fffefe; color: var(--primary); }
+    .faq-toggle-icon { font-size: 1.2rem; font-weight: bold; color: var(--gray); transition: transform 0.3s ease; }
+    .faq-answer { max-height: 0; overflow: hidden; padding: 0 25px; color: var(--gray); font-size: 0.95rem; transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease; }
+    .faq-item.active .faq-toggle-icon { transform: rotate(45px); color: var(--primary); }
+    .faq-item.active .faq-answer { max-height: 1000px; padding: 0 25px 20px 25px; transition: max-height 0.5s ease-in, padding 0.3s ease; }
+    .faq-item.active .faq-question { font-weight: 700; color: var(--primary); }
+
     /* Contact Section CTA */
     .cta { text-align: center; background: linear-gradient(135deg, #e10600, #b30500); color: white; border-radius: 32px; padding: 80px 40px; }
     .cta h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
@@ -179,6 +191,7 @@
           <li><a href="#services">Layanan</a></li>
           <li><a href="#sosmed">Media Sosial</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
         <div class="mobile-menu" id="menuBtn">☰</div>
@@ -267,7 +280,7 @@
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
           <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">📍 Jl. Teropong & Sekitarnya</div>
-          <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">📍 Tarai Bangun</div>
+          <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">Tarai Bangun</div>
           <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">📍 Kubang Raya</div>
           <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">📍 Kubang Jaya</div>
           <div style="background: var(--light); padding: 15px 20px; border-radius: 12px; font-weight: 600; text-align: center; border: 1px solid #f0f0f0;">📍 Tampan</div>
@@ -314,6 +327,10 @@
           <div class="payment-box">
             <div class="pay-icon">🏦</div>
             <span>Transfer Bank</span>
+          </div>
+          <div class="payment-box">
+            <div class="pay-icon">💳</div>
+            <span>Kartu Debit</span>
           </div>
         </div>
       </div>
@@ -371,6 +388,68 @@
     </div>
   </section>
 
+  <!-- F.A.Q. Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <p>Punya pertanyaan seputar layanan kami? Temukan jawaban cepatnya di bawah ini.</p>
+      </div>
+      
+      <div class="faq-wrapper">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah AHASS Zaky Motor Pekanbaru merupakan bengkel resmi?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ya, benar. Kami adalah jaringan bengkel resmi AHASS (Astra Honda Authorized Service Station) yang melayani perawatan berkala, perbaikan, dan penyediaan suku cadang resmi untuk seluruh jenis sepeda motor Honda.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Bagaimana cara melakukan booking servis agar bebas antre?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Anda bisa dengan mudah melakukan booking servis terlebih dahulu secara online melalui WhatsApp resmi kami di nomor 0822-8828-7070 sebelum kedatangan Anda untuk menentukan jadwal servis terbaik.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah suku cadang yang tersedia di bengkel terjamin keasliannya?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>100% Asli. Kami menjamin semua suku cadang, pelumas (oli MPX/SPX), aksesoris, serta ban yang kami sediakan merupakan produk original Honda Genuine Parts (HGP) langsung didistribusikan dari PT Astra Honda Motor.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah layanan Servis Kunjung (Home Service) dikenakan biaya tambahan?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Tarif dasar jasa servis kunjung disesuaikan jarak lokasi pengerjaan. Untuk pengerjaan rutin di area cakupan operasional terdekat kami (seperti Jl. Teropong, Tarai Bangun, Kubang Jaya), biayanya sangat terjangkau. Silakan hubungi admin via WA untuk info detail biaya pastinya.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah bengkel AHASS Zaky Motor tetap buka pada hari Minggu?</span>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ya, kami tetap buka setiap hari Minggu mulai pukul 08.00 s.d 17.00 WIB untuk memudahkan Anda merawat motor kesayangan di hari libur akhir pekan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Kontak & Peta Section -->
   <section id="contact">
     <div class="container">
@@ -399,7 +478,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.704205561148!2d101.4011409749646!3d0.4323214995634568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a7bc67fee333%3A0x9875cfc32bcbff70!2sAHASS%20Zaky%20Motor%20Pekanbaru!5e0!3m2!1sid!2sid!4v1716088285511!5m2!1sid!2sid" 
             width="100%" height="400" style="border:0;" 
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </table> <!-- Tag salah ini diganti iframe penutup yang benar otomatis oleh browser, tapi di sini dibersihkan -->
           </iframe>
         </div>
       </div>
@@ -431,11 +509,31 @@
       menuBtn.innerHTML = navLinks.classList.contains('active') ? '✕' : '☰';
     });
 
-    // Otomatis tutup menu ketika link navigasi diklik
     links.forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         menuBtn.innerHTML = '☰';
+      });
+    });
+
+    // JavaScript Interaktif untuk F.A.Q. Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        
+        // Menutup item FAQ lain yang sedang terbuka (Opsional)
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-toggle-icon').textContent = '+';
+          }
+        });
+
+        // Toggle item yang diklik
+        item.classList.toggle('active');
+        const icon = item.querySelector('.faq-toggle-icon');
+        icon.textContent = item.classList.contains('active') ? '✕' : '+';
       });
     });
   </script>
