@@ -99,6 +99,19 @@
     .catalog-item h4 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
     .catalog-item p { font-size: 0.9rem; color: var(--gray); }
 
+    /* Motor Baru Section Styles */
+    .motor-section { background: var(--light); }
+    .motor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+    .motor-card { background: white; border: 1px solid #eee; border-radius: 20px; padding: 25px; text-align: center; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.01); }
+    .motor-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); }
+    .motor-img-placeholder { width: 100%; height: 160px; background: #f3f4f6; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin-bottom: 20px; color: #9ca3af; }
+    .motor-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+    .motor-tag { display: inline-block; background: #ffeaea; color: var(--primary); font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 15px; }
+    .motor-features { text-align: left; background: var(--light); padding: 15px; border-radius: 12px; margin-bottom: 20px; list-style: none; font-size: 0.85rem; color: var(--gray); }
+    .motor-features li { margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+    .motor-btn { display: block; background: var(--dark); color: white; padding: 12px; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+    .motor-btn:hover { background: var(--primary); }
+
     /* Table Pricing */
     .table-container { overflow-x: auto; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; margin-top: 40px; }
     .table-pricing { width: 100%; border-collapse: collapse; text-align: left; }
@@ -211,12 +224,13 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#home" class="logo">AHASS <span>Zaky Motor Pekanbaru</span></a>
+        <a href="#home" class="logo">AHASS <span>Zaky Motor</span></a>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#why">Keunggulan</a></li>
           <li><a href="#services">Layanan</a></li>
           <li><a href="#parts">Suku Cadang</a></li>
+          <li><a href="#motor-baru" style="color: var(--primary); font-weight: 700;">Unit Baru 🆕</a></li>
           <li><a href="#sosmed">Media Sosial</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -258,7 +272,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Keunggulan Kami</h2>
-        <p>Kenapa motor Honda kesayangan Anda harus mempercayakan perawatannya di AHASS Zaky Motor Pekanbaru?</p>
+        <p>Kenapa motor Honda kesayangan Anda harus mempercayakan perawatannya di AHASS Zaky Motor?</p>
       </div>
       <div class="grid-cards">
         <div class="card">
@@ -405,6 +419,68 @@
     </div>
   </section>
 
+  <!-- Motor Baru Section -->
+  <section class="motor-section" id="motor-baru">
+    <div class="container">
+      <div class="section-title">
+        <h2>Penjualan Motor Baru Honda</h2>
+        <p>Temukan motor Honda impian Anda berdasarkan tipenya. Proses mudah, cepat, dan dengan promo DP/angsuran terbaik untuk wilayah Pekanbaru & Kampar.</p>
+      </div>
+
+      <div class="motor-grid">
+        <!-- Tipe 1: MATIC -->
+        <div class="motor-card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/product-banner-1920x800pxldz-1-26062026-031630.jpg" alt="Honda Matic" style="width: 100%; height: 160px; object-fit: cover; border-radius: 14px; margin-bottom: 20px;">
+          <span class="motor-tag">Praktis & Stylish</span>
+          <h3>Tipe Matic</h3>
+          <p style="font-size: 0.9rem; color: var(--gray); margin-bottom: 15px;">Pilihan motor matik Honda yang irit, gesit, dan modern.</p>
+          <ul class="motor-features">
+            <li>Lini Unit: BeAT, Scoopy, Vario 125/160, Stylo 160, PCX 160, ADV 160</li>
+            <li>✅ Teknologi eSP+ & PGM-FI (Super Irit)</li>
+            <li>✅ Bagasi luas & fitur keyless canggih</li>
+          </ul>
+          <a href="https://wa.me/6282288287070?text=Halo%20Admin%20AHASS%20Zaky%20Motor%2C%20saya%20tertarik%20ingin%20tanya%20promo%20dan%20brosur%20kredit%20untuk%20Motor%20Honda%20Tipe%20Matic" target="_blank" rel="noopener noreferrer" class="motor-btn">Tanya Promo Matic</a>
+        </div>
+
+        <!-- Tipe 2: CUB (BEBEK) -->
+        <div class="motor-card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/banner-product-4-04032022-101917-25102023-074753.jpg" alt="Honda Cub" style="width: 100%; height: 160px; object-fit: cover; border-radius: 14px; margin-bottom: 20px;">
+          <span class="motor-tag">Tangguh & Ekonomis</span>
+          <h3>Tipe Cub / Bebek</h3>
+          <p style="font-size: 0.9rem; color: var(--gray); margin-bottom: 15px;">Motor bebek andalan untuk mobilitas harian dan kerja keras.</p>
+          <ul class="motor-features">
+            <li>Lini Unit: Revo Fit, Revo X, Supra X 125, Supra GTR 150</li>
+            <li>✅ Mesin bandel & perawatan sangat mudah</li>
+            <li>✅ Konsumsi bbm paling efisien di kelasnya</li>
+          </ul>
+          <a href="https://wa.me/6282288287070?text=Halo%20Admin%20AHASS%20Zaky%20Motor%2C%20saya%20tertarik%20ingin%20tanya%20promo%20dan%20brosur%20kredit%20untuk%20Motor%20Honda%20Tipe%20Cub%20%2F%20Bebek" target="_blank" rel="noopener noreferrer" class="motor-btn">Tanya Promo Cub</a>
+        </div>
+
+        <!-- Tipe 3: SPORT -->
+        <div class="motor-card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/productbanner-cbr150r-2024-1920x800px-1-23102024-071029.jpg" alt="Honda Sport" style="width: 100%; height: 160px; object-fit: cover; border-radius: 14px; margin-bottom: 20px;">
+          <span class="motor-tag">Performa & Gagah</span>
+          <h3>Tipe Sport</h3>
+          <p style="font-size: 0.9rem; color: var(--gray); margin-bottom: 15px;">Tampil percaya diri dengan performa mesin bertenaga tinggi.</p>
+          <ul class="motor-features">
+            <li>Lini Unit: CB150 Verza, CB150R Streetfire, CBR150R, CRF150L, CBR250RR</li>
+            <li>✅ Desain agresif, aerodinamis & sporty</li>
+            <li>✅ Mesin DOHC bertenaga & responsif</li>
+          </ul>
+          <a href="https://wa.me/6282288287070?text=Halo%20Admin%20AHASS%20Zaky%20Motor%2C%20saya%20tertarik%20ingin%20tanya%20promo%20dan%20brosur%20kredit%20untuk%20Motor%20Honda%20Tipe%20Sport" target="_blank" rel="noopener noreferrer" class="motor-btn">Tanya Promo Sport</a>
+        </div>
+      </div>
+
+      <!-- Info Tambahan Pembelian Unit Baru -->
+      <div style="margin-top: 50px; background: white; padding: 30px; border-radius: 20px; border: 1px solid #eee; text-align: center;">
+        <h4 style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 700; color: var(--dark);">🎁 Dapatkan Benefit Pembelian Unit di Sini:</h4>
+        <p style="color: var(--gray); font-size: 0.95rem; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+          Setiap pembelian sepeda motor baru melalui jaringan kami berhak mendapatkan <strong>Gratis Servis Berkala resmi</strong> di AHASS Zaky Motor, STNK & BPKB diproses cepat, serta bonus eksklusif Helm resmi AHM dan Toolkit lengkap. Melayani pembelian Cash maupun Kredit dengan leasing terpercaya.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Media Sosial Section -->
   <section class="social-section" id="sosmed">
     <div class="container">
@@ -448,7 +524,7 @@
           <h4>— Dahliana Dahliana.</h4>
         </div>
         <div class="testi-card">
-          <p>"Alhamdulillah, udah setres dengan Motor yang di service malah makin rusak di ATAS dekat rumah, coba cek di google maps, ada Zaky motor Pekanbaru, semua karyawannya ramah, montirnya edukatif ke customer, spart part tergolong lebih murah dr yang lain. Semoga selalu Amanah"</p>
+          <p>"Alhamdulillah, udah setres dengan Motor yang di service malah makin rusak di ATAS dekat rumah, coba cek di google maps, ada Zaky motor, semua karyawannya ramah, montirnya edukatif ke customer, spart part tergolong lebih murah dr yang lain. Semoga selalu Amanah"</p>
           <h4>— Mr Rinaldi</h4>
         </div>
       </div>
